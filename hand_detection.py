@@ -5,7 +5,14 @@ from Video import *
 
 
 def HandAndFace_detection(image, roi1, roi2, count):
-    # test_image = cv2.imread('src/hand_gesture/image_000000000.jpg')
+    '''
+    
+    :param image: opencv 이미지 
+    :param roi1: 검출하려는 hand 영역 ((x1, y1), (x2, y2))
+    :param roi2: 검출하려는 face 영역 ((x1, y1), (x2, y2))
+    :param count: 몇 번째 프레임인지 나타냄
+    :return: 
+    '''
     test_image = image
 
     hsvim = cv2.cvtColor(test_image, cv2.COLOR_BGR2HSV)

@@ -5,6 +5,9 @@ import numpy as np
 from os.path import isfile, join
 import matplotlib.pyplot as plt
 from Video import *
+
+# 동영상에서 자동차 인식
+
 video2frames('src/car1.mp4', 'src/car1')
 cap = cv2.VideoCapture('src/car1.mp4')
 

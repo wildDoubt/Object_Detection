@@ -5,6 +5,12 @@ import os
 import matplotlib.pyplot as plt
 
 def video2frames(video_path, output_path):
+    '''
+    
+    :param video_path: 비디오 경로
+    :param output_path: 프레임을 저장할 경로
+    :return: 
+    '''
     cap = cv2.VideoCapture(video_path)
 
     if cap.isOpened() == False:
@@ -30,6 +36,13 @@ def video2frames(video_path, output_path):
     cap.release()
 
 def frames2video(frames_path, output_path, video_file_name):
+    '''
+    
+    :param frames_path: 프레임이 저장되어 있는 경로 
+    :param output_path: 비디오를 저장할 경로
+    :param video_file_name: 비디오 파일명
+    :return: 
+    '''
     try:
         if os.path.isdir(frames_path):
             for root, dirs, files in os.walk(frames_path, topdown=False):
