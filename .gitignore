@@ -1,3 +1,9 @@
 .idea/
 __pychache/
 venv/
+src/
+/contour_frames_3/
+/contour_frames_4/
+/hand_face_frames/
+/hand_frames/
+video/
